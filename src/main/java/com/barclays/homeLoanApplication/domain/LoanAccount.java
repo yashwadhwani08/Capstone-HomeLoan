@@ -66,4 +66,30 @@ public class LoanAccount {
     public void setLoanStatus(String loanStatus) {
         this.loanStatus = loanStatus;
     }
+
+    @Override
+    public String toString() {
+        return "LoanAccount{" +
+                "loanAccountNumber=" + loanAccountNumber +
+                ", loanAmount=" + loanAmount +
+                ", loanInterest=" + loanInterest +
+                ", loanTenure=" + loanTenure +
+                ", loanStatus='" + loanStatus + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        LoanAccount that = (LoanAccount) o;
+
+        return getLoanAccountNumber() == that.getLoanAccountNumber();
+    }
+
+    @Override
+    public int hashCode() {
+        return getLoanAccountNumber();
+    }
 }
