@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#008cba; 
+    height:100%;
+}
+.container{ 
+   height:100%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.content{
+    background-color:white;
+    width:500px;
+    height:500px;
+}
+img{
+    width: 100%;
+    height: 25%;
+}
+.form-title{
+    padding:10px 40px 0px;
+}
+form{
+    padding:40px 80px 40PX 40PX;
+}
+input[type=text], [type=email]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    width:100%;
+    margin: 8px 0;
+    padding:10px 0;
+}
+input[type=number]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+}
+input :hover {
+    background-color: red;
+}
+select{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+    width:50%;
+}
+.beside{
+    display:flex;  
+    justify-content: space-between;
+}
+button{
+    color:#ffffff;
+    background-color: #4caf50;
+    height:40px;
+    width:25%;
+    margin-top:15px;
+    cursor: pointer;
+    border:none;
+    border-radius:2%;
+    outline:none;
+    text-align:center;
+    font-size:16px;
+    text-decoration:none;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+button:hover{
+    background-color:#333333;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container" >
+    <div class="content" style="padding:5px 50px 180PX 40PX;">
+      <h1 class="form-title" style="text-align: center; font-size: 40px;">Loan Application</h1>
+      <hr>
+       <img src="https://home.barclays/content/dam/home-barclays/images/generic/HERO-BARCLAYS-EXTERIOR-CLOSE-16_9.xsmall.medium_quality.jpg" alt="header-image" class="cld-responsive">
+       <hr>
+            <!-- <h1 class="form-title" style="text-align: center; font-size: 40px;">Loan Application</h1> -->
+            <form>
+               <input type="text" placeholder="NAME">
+            <div class="beside">
+              <input type="email" placeholder="EMAIL ADDRESS">
+                <select>
+                    <option>SELECT BANK</option>
+                    <option>ICICI</option>
+                    <option>HSBC</option>
+                    <option>SBI</option>
+                </select>
+            </div>
+            <input type="text" placeholder="ADDRESS">
+            <div class="beside">
+                <input type="number" placeholder="TENURE">
+                <input type="text" placeholder="LOAN AMOUNT"><br>
+            </div>
+                
+                 <input type="text" placeholder="BANK ACCOUNT NUMBER">
+                  <input type="text" placeholder="IFSC CODE">
+                <button type="button">NEXT</button>
+            </form>
+        </div>
+ </div>
+
+  </body>
+</html>
+
+
+
